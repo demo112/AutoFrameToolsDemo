@@ -8,6 +8,7 @@ class ControlClint:
     """
 
     def __init__(self):
+        # 生成实例
         self.co = ControlOperation()
 
     def send_user_name(self, username, Name="用户名", Depth=9, foundIndex=1):

@@ -39,10 +39,16 @@ class UI:
         pass
 
     def change_tab(self):
+        """
+        用例：1、切换各页面
+        :return:
+        。
+        """
         de = DeviceControl()
         pe = PersonControl()
         ac = AccessControl()
         at = AttendanceControl()
+
         de.tab_device(Name="设备管理", Depth=12, foundIndex=2)
         pe.tab_person(Name="人员管理", Depth=12, foundIndex=3)
         ac.tab_access(Name="访问控制", Depth=12, foundIndex=4)
